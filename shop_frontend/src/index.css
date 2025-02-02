@@ -1,13 +1,147 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Подключение базовых стилей Tailwind CSS */
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+/* Подключение базовых стилей Tailwind CSS */
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Глобальные стили (по желанию) */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #1e293b;
+  --background-color: #f9fafb;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+/* Дополнительные стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary-color);
+}
+
+/* Кнопки */
+button {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #2d6eff;
+}
+
+/* Удаление стандартных отступов для списков */
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Стиль для ссылок */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}/* Подключение базовых стилей Tailwind CSS */
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Глобальные стили (по желанию) */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #1e293b;
+  --background-color: #f9fafb;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+/* Дополнительные стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary-color);
+}
+
+/* Кнопки */
+button {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #2d6eff;
+}
+
+/* Удаление стандартных отступов для списков */
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Стиль для ссылок */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* Глобальные стили (по желанию) */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f9fafb; /* Светло-серый фон для всего приложения */
+}
+
+/* Дополнительные стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+  color: #1e293b; /* Темно-синий цвет текста */
+}
+
+/* Кнопки */
+button {
+  transition: all 0.3s ease-in-out; /* Плавные переходы для кнопок */
+}
+
+button:hover {
+  transform: scale(1.05); /* Небольшое увеличение при наведении */
+}
+
+/* Удаление стандартных отступов для списков */
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Стиль для ссылок */
+a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #3b82f6; /* Синий цвет для ссылок */
+}
+
+a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
 }
